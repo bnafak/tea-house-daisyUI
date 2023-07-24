@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/98cebaf8dc.js" crossorigin="anonymous"></script>
     <!-- tailwind custom color  -->
     <script>
         tailwind.config = {
@@ -34,9 +36,8 @@
 
 <body class="font-manrope">
     <header class="container mx-auto">
-        <div class="hero min-h-screen">
-            <div class="hero-content flex-col lg:flex-row">
-
+        <div class="hero">
+            <div class="hero-content flex lg:flex">
                 <div>
                     <h1 class="text-7xl font-extrabold">
                         It's good <br>
@@ -44,67 +45,74 @@
                         Tea House</h1>
                     <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                     </p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn btn-primary">Explore more</button>
                 </div>
-
-                <div class="items-center gap-4 drop-shadow-lg bg-white">
-
-                    <img src="./images/banner.png" class="max-w-sm" />
-                    <div>
-                        <i class="fa-solid fa-star"></i>
-                        <h3 class="text-3xl">5.00</h3>
-                        <p>Trust Pilot Ratings</p>
+                <div>
+                    <img src="images/banner.png" class="max-w-sm" />
+                    <!-- Rating badge  -->
+                    <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
+                        <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+                        <div>
+                            <h3 class="text-3xl">5.00</h3>
+                            <p>Trust Pilot Ratings</p>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </div>
+
     </header>
+
 
     <main class="container mx-auto">
         <!-- feature section  -->
         <section class="text-center my-24">
             <h2 class="text-5xl font-extrabold mb-5">Our Featured Products</h2>
-            <p class="lg:max-w-3xl mb-10 mx-auto text-center">There are many variations of passages of Lorem Ipsum
-                available, but the majority have suffered alteration in some form, by injected humour, or randomised
-                words which don't look even slightly believable. </p>
+            <p class="lg:max-w-3xl mb-10 mx-auto ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+
             <!-- featured tea card container  -->
-            <div class="grid gap-6 grid-cols1 md:cols-2 lg:grid-cols-4">
+            <div class="grid gap-6 grid-cols-1 md:cols-2 lg:grid-cols-4">
                 <!-- first card  -->
-                <div class="card w-96 p-8 bg-base-100 shadow-xl">
+                <div class="card p-8 bg-gradient-to-r from-[f#f4f4f4] to [#f4f4f4] shadow-xl">
                     <figure><img src="./images/tea-1.png" alt="Shoes" /></figure>
-                    <div class="card-body text-center">
+                    <div class="text-2xl font-bold">
                         <h2 class="text-2xl font-bold">Milk Tea</h2>
                         <p>Creamer could be replaced by fresh milk</p>
                     </div>
                 </div>
                 <!-- 2nd card  -->
-                <div class="card w-96 p-8 bg-base-100 shadow-xl">
+                <div class="card p-8 bg-gradient-to-r from-[f#f4f4f4] to [#f4f4f4] shadow-xl">
                     <figure><img src="./images/tea-2.png" alt="Shoes" /></figure>
-                    <div class="card-body text-center">
+                    <div class="text-2xl font-bold">
                         <h2 class="text-2xl font-bold">Milk Tea</h2>
                         <p>Creamer could be replaced by fresh milk</p>
                     </div>
                 </div>
                 <!-- 3rd card  -->
-                <div class="card w-96 p-8 bg-base-100 shadow-xl">
+                <div class="card p-8 bg-gradient-to-r from-[f#f4f4f4] to [#f4f4f4] shadow-xl">
                     <figure><img src="./images/tea-3.png" alt="Shoes" /></figure>
-                    <div class="card-body text-center">
+                    <div class="text-2xl font-bold">
                         <h2 class="text-2xl font-bold">Milk Tea</h2>
                         <p>Creamer could be replaced by fresh milk</p>
                     </div>
                 </div>
+                
                 <!-- 4th card  -->
-                <div class="card w-96 p-8 bg-base-100 shadow-xl">
+                <div class="card p-8 bg-gradient-to-r from-[f#f4f4f4] to [#f4f4f4] shadow-xl">
                     <figure><img src="./images/tea-4.png" alt="Shoes" /></figure>
-                    <div class="card-body text-center">
+                    <div class="text-2xl font-bold">
                         <h2 class="text-2xl font-bold">Milk Tea</h2>
                         <p>Creamer could be replaced by fresh milk</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- great fresh tea sectopm -->
-        <section class="my-24 flex flex-col lg:flwx-row flex-1">
+
+        <!-- great fresh tea section -->
+
+
+        <section class="my-24 flex lg:flwx-row flex-1">
             <div class="grid gap-8 grid-cols-1 md:grid-cols-2">
                 <div class="div">
 
@@ -118,8 +126,6 @@
 
                 <div class="div"></div>
             </div>
-
-
 
             <div class="space-y-5 flex-1">
                 <h3 class="text-5xl font-extrabold">Great Tea, Freshly <br> Presented</h3>
@@ -136,20 +142,22 @@
                 <h3>Premium Quality </h3>
                 <p>Premium Quality that makes tea more elegant and more durable when you use it.</p>
             </div>
-
         </section>
+
         <!-- super client section  -->
         <section class="my-24 flex flex-row gap-12 rounded-xl bg-gradient-to-r from-[#ff8938] to-[#f00] ">
             <div class="space-y-5">
-                <h2 class="text-5xl font-extrabold text-white">Meet Our Super <br>
-                    Clients
-                </h2>
-                <p>
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form, by injected humour, or randomised words which don't look even slightly
-                    believable.
-                </p>
-                <button class="btn btn-primary">Show All</button>
+                <div>
+                    <h2 class="text-5xl font-extrabold text-white">Meet Our Super <br>
+                        Clients
+                    </h2>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.
+                    </p>
+                    <button class="btn btn-primary">Show All</button>
+                </div>
 
                 <!-- review  -->
                 <div class="relative p-10 rounded-lg bg-white">
@@ -168,8 +176,45 @@
 
 
 
-    <footer>
+    <footer class="footer p-10 bg-base-200 text-base-content">
+        <div>
+            <span class="footer-title">Services</span>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+        </div>
+        <div>
+            <span class="footer-title">Company</span>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </div>
+        <div>
+            <span class="footer-title">Legal</span>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </div>
+        <div>
+            <span class="footer-title">Newsletter</span>
+            <div class="form-control w-80">
+                <label class="label">
+                    <span class="label-text">Enter your email address</span>
+                </label>
+                <div class="relative">
+                    <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" />
+                    <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+        <div>
+            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        </div>
     </footer>
 
 </body>
